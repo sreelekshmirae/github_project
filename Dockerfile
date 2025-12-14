@@ -1,10 +1,10 @@
 FROM eclipse-temurin:17-jdk-alpine
-
+ENV APP_HOME /usr/src/app
 WORKDIR $APP_HOME
 
 RUN ls 
 
-ENV APP_HOME /usr/src/app
+
 
 COPY app/*.jar $APP_HOME/app.jar
 
