@@ -86,7 +86,7 @@ jobs:
       run: mvn package
 
     - name: upload JAR artifact
-      uses: actions/upload-artifact@4
+      uses: actions/upload-artifact@v4
       with:
         name: app-jar
         path: target/*.jar
